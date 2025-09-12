@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="QrLogo-removebg-preview.png" type="image/x-icon">
+    <title>Simple Qr-Code Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="QrLogo-removebg-preview.png" alt="Website Logo">
+            <a href="#">QR-Code Generator</a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button> Subscribe </button></a>
+    </header>
+    <div id="nav_border"></div>
+    <main>
+        <section class="qr_section">
+            <h2 class="title">Type your message or drop a link :</h2>
+            <input class="content" type="text" placeholder="What do you want to turn into a QR code today?">
+            <input class="qr_button" type="button" value="Generate">
+            <div class="qrcode">
+                <label id="qrlabel">Your QR Code :</label>
+                <img class="defaultQr" src="DefaultQrCode.png" alt="Qr Code Example ">
+            </div>
+            <div>
+                <button class="Download">Download Your Qr-Code</button>
+            </div>
+        </section>
+        <section class="Sec_section">
+            <div id="about_border"></div>
+            <div>
+                <h2 class="About_title"> Why Use Simple QR-Code Generator? </h2>
+                <p class="About">Welcome to Simple QR-Code Generator — your fast, no-fuss tool for turning messages,
+                    links, and ideas into scannable QR codes. Just type, click, and download. No clutter, no sign-ups.
+
+                    Built with ❤️ by Arkadian, this lightweight platform is designed for speed, simplicity, and
+                    creativity. Drop your message and let your QR code do the talking.</p>
+            </div>
+            <div id="about_border_bottom"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Made with ❤️ by Arkadian</p>
+    </footer>
+</body>
+</html>
