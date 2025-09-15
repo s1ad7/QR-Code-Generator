@@ -143,6 +143,9 @@ footer {
     border-radius: 50px;
     cursor: text;
 }
+#valid{
+    display: none;
+}
 .qr_button{
     border:none;
     color: white;
