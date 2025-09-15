@@ -16,12 +16,15 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 10%;
     position: sticky; 
+    top: 0;
+    background: rgba(53, 138, 235, 70%);
+    backdrop-filter: blur(10px); 
 }
 #nav_border{
     border-bottom: 2px rgb(53, 138, 235) solid;
-    width: 30%;
+    width: 15%;
     margin: 0 auto;
 }
 .logo img {
@@ -100,9 +103,11 @@ footer {
     
     color: #edf0f1;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-family: montserrat, sans-serif;
     font-size: 14px;
+    background-color: rgb(53, 138, 235, 70%);
+    
 }
 
 .qr_section{
@@ -196,7 +201,8 @@ footer {
         font-family: montserrat, sans-serif;
         font-weight: 600;
         color:  #ffffff;
-        margin-top: 120px;
+        margin-top: 60px;
+        
         
         }
             .About{
