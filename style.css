@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 
 }
 
@@ -320,10 +321,11 @@ footer {
         padding: 25px;
         border-right: rgb(53, 138, 235) solid;
         border-left: rgb(53, 138, 235) solid;
+        line-height: 150%;
     }
     .grid_start img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 250px;
         display: grid;
         margin: auto;
         padding : 25px;
