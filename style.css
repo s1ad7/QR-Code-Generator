@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 
 }
 
@@ -18,20 +19,23 @@ button {
 }
 
 header {
+    position: fixed;
+    top: 2%;
+    left: 10%;   /* make sure it sticks from the left */
+    right: 10%;  /* stretch to the right */
+    width: 80%;  /* full width */
+    margin: 0;    /* margins don’t work well on fixed */
+    border-radius: 15px; /* optional, since border-radius on full-width looks weird */
+    padding: 10px 50px;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 50px;
-    position: sticky;
-    top: 0;
+
     background: rgba(53, 138, 235, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 20px ;
-    margin: 15px 40px;
-    
-    
-    
 }
+
 
 #nav_border {
     border-bottom: 2px rgb(53, 138, 235) solid;
@@ -111,7 +115,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 15px;
 
 }
 
@@ -134,7 +138,7 @@ footer {
     color: white;
     font-weight: 400;
     font-family: montserrat, sans-serif;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .title {
@@ -320,10 +324,11 @@ footer {
         padding: 25px;
         border-right: rgb(53, 138, 235) solid;
         border-left: rgb(53, 138, 235) solid;
+        line-height: 150%;
     }
     .grid_start img{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 250px;
         display: grid;
         margin: auto;
         padding : 25px;
