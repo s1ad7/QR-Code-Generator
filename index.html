@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="QrLogo-removebg-preview.png" type="image/x-icon">
     <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
     <title>Simple Qr-Code Generator</title>
 </head>
 
@@ -19,9 +20,9 @@
         <nav>
             <ul class="nav_links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#guide">Guide</a></li>
-                
+                <li><a href="#Download">About</a></li>
+                <li><a href="#about_border">Guide</a></li>
+
             </ul>
         </nav>
         <a class="cta" href="#"><button> Subscribe </button></a>
@@ -35,10 +36,10 @@
             <input class="qr_button" type="button" value="Generate">
             <div class="qrcode">
                 <label id="qrlabel">Your QR Code :</label>
-                <img class="defaultQr" src="DefaultQrCode.png" alt="Qr Code Example ">
+                <canvas id="qrCanvas"></canvas>
             </div>
             <div>
-                <button class="Download">Download Your Qr-Code</button>
+                <button class="Download" id="Download">Download Your Qr-Code</button>
             </div>
         </section>
         <section id="about" class="Sec_section">
@@ -61,7 +62,7 @@
             </div>
         </section>
         <section class="grid">
-            <div  class="grid_start">
+            <div class="grid_start">
                 <h4> 📌 What Is a QR Code?
                     <p>A QR code (Quick Response code) is a type of matrix barcode that stores information in a pattern
                         of black squares on a white background. Unlike traditional barcodes, QR codes can hold much more
@@ -75,7 +76,7 @@
                 <img src="guide.png" alt="qrexample">
                 <h4> ⚙️ How to Generate a QR Code?
                     <p>Creating a QR code is simple and fast. You start by choosing the type of content you want to
-                        encode—this could be a URL, plain text, contact details, or even Wi-Fi credentials. Then, using
+                        encode this could be a URL, plain text, contact details, or even Wi-Fi credentials. Then, using
                         a QR code generator (up there!), you input your data, click a generate, and instantly receive a
                         downloadable QR image.</p>
                 </h4>
