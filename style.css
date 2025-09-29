@@ -436,13 +436,54 @@ footer {
     padding: 10px 50px;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     background-color: red;
     backdrop-filter: blur(10px);
+    .logo img {
+    width: 20px;
 }
 
+.logo {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+
+}
+
+.logo a:hover {
+    transition: all 0.3s ease 0s;
+    color: #0088A9;
+}
+
+.logo img:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.2) translateY(-3px);
+}
+}
+
+
+@media screen and (max-width: 668px) {
+    header {
+    position: sticky;
+    top: 2%;
+    left: 10%;   /* make sure it sticks from the left */
+    right: 10%;  /* stretch to the right */
+    width: 80%;  /* full width */
+    margin: 0;    /* margins don’t work well on fixed */
+    border-radius: 15px;
+    padding: 10px 50px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: rgb(51, 0, 255);
+    backdrop-filter: blur(10px);
+}
 
 #nav_border {
     border-bottom: 2px rgb(53, 138, 235) solid;
@@ -452,11 +493,16 @@ footer {
 
 .logo img {
     width: 20px;
+    
 }
 
 .logo {
-    
-
+    display: flex;
+    cursor: pointer;
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
 }
 
 .logo a:hover {
