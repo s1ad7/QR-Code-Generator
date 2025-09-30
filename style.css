@@ -149,6 +149,14 @@ main {
     box-shadow: 0 0 8px #fff;
 }
 
+#valid {
+    display: none ;
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
 .qrcode {
     margin-top: 20px;
     width: 280px;
